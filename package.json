@@ -2,6 +2,6 @@
     "name":"bharath-cli",
     "version": "1.0.0",
     "bin":{
-        "bharath": "index.js"
+        "bharath-cli": "index.js"
     }
 }
