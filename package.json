@@ -1,6 +1,6 @@
 {
     "name": "bharath-cli",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Get to know bharath via 'npx bharath-cli'",
     "bin": {
         "bharath-cli": "index.js"
@@ -15,9 +15,9 @@
     ],
     "license": "MIT",
     "main": "index.js",
-    "repository":"Bharath-code/bharath",
-    "author":{
-      "name": "Bharathkumar",
-      "email": "kumarbharath63@icloud.com"
+    "repository": "Bharath-code/bharath",
+    "author": {
+        "name": "Bharathkumar",
+        "email": "kumarbharath63@icloud.com"
     }
 }
