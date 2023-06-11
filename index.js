@@ -4,16 +4,21 @@ import chalk from 'chalk';
 import welcome from "cli-welcome";
 import pkgJSON from "./package.json" assert { type: "json" };
 
-// Add import assertion
 
-//import pkgJSON from "./package.json"
-//const welcome = require("cli-welcome")
-//const pkgJSON = require("./package.json")
 const log = console.log;
 const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
 const purple = chalk.hex(`#6cc644`).bold.inverse;
 const italic = chalk.italic;
 const dim = chalk.dim;
+
+//alerts
+import sym from "log-symbols";
+const success = chalk.green;
+const warning = chalk.hex('#FFA500');
+const info = chalk.blue;
+const error = chalk.red.bold;
+
+
 welcome(
   {
     title: `Bharathkumar`,
@@ -35,3 +40,15 @@ ${italic(
 📚 ${purple(` Github `)}  ${dim(`https://github.com/Bharath-code`)}
 
 `);
+
+log(`
+
+  ${sym.success} ${success(` SUCCESS `)} Thank you for using my CLI
+
+  ${sym.info} ${info(` INFO `)} Learning CLI automation
+
+  ${sym.warning} ${warning(` WARNING `)} Don't copy me, Be yourself
+
+  ${sym.error} ${error(` ERROR `)} I'm learning, so bear my mistakes
+
+  `)
