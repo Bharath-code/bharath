@@ -12,5 +12,12 @@
         "bharathkumar",
         "bharath",
         "kumar"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository":"Bharath-code/bharath",
+    "author":{
+      "name": "Bharathkumar",
+      "email": "kumarbharath63@icloud.com"
+    }
 }
