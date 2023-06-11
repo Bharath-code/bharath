@@ -1,6 +1,6 @@
 {
     "name": "bharath-cli",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Get to know bharath via 'npx bharath-cli'",
     "bin": {
         "bharath-cli": "index.js"
@@ -8,9 +8,9 @@
     "dependencies": {
         "cli-welcome": "^2.2.2"
     },
-    "keywords":[
-      "bharathkumar",
-      "bharath",
-      "kumar"
+    "keywords": [
+        "bharathkumar",
+        "bharath",
+        "kumar"
     ]
 }
