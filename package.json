@@ -2,10 +2,12 @@
     "name": "bharath-cli",
     "version": "2.0.3",
     "description": "Get to know bharath via 'npx bharath-cli'",
+    "type":"module",
     "bin": {
         "bharath": "index.js"
     },
     "dependencies": {
+        "chalk": "^5.2.0",
         "cli-welcome": "^2.2.2"
     },
     "keywords": [
