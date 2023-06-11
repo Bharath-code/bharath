@@ -1,7 +1,10 @@
 {
-    "name":"bharath-cli",
+    "name": "bharath-cli",
     "version": "1.0.0",
-    "bin":{
+    "bin": {
         "bharath-cli": "index.js"
+    },
+    "dependencies": {
+        "clear-any-console": "^1.16.2"
     }
 }
