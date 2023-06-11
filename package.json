@@ -1,6 +1,6 @@
 {
     "name": "bharath-cli",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "description": "Get to know bharath via 'npx bharath-cli'",
     "bin": {
         "bharath": "index.js"
