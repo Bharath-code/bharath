@@ -8,6 +8,8 @@
     },
     "dependencies": {
         "chalk": "^5.2.0",
+        "cli-alerts-bharath": "^2.0.0",
+        "cli-check-node": "^1.3.4",
         "cli-welcome": "^2.2.2",
         "log-symbols": "^5.1.0"
     },

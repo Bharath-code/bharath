@@ -3,7 +3,8 @@
 import chalk from 'chalk';
 import welcome from "cli-welcome";
 import pkgJSON from "./package.json" assert { type: "json" };
-
+import alert from "cli-alerts-bharath";
+import checkNode from "cli-check-node";
 
 const log = console.log;
 const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
@@ -18,6 +19,7 @@ const warning = chalk.hex('#FFA500');
 const info = chalk.blue;
 const error = chalk.red.bold;
 
+checkNode("16");
 
 welcome(
   {
@@ -52,3 +54,5 @@ log(`
   ${sym.error} ${error(` ERROR `)} I'm learning, so bear my mistakes
 
   `)
+
+alert({ type: 'info', msg: 'Checkout that i have created a node module' })
