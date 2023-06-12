@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
-import welcome from "cli-welcome";
-import pkgJSON from "./package.json" assert { type: "json" };
 import alert from "cli-alerts-bharath";
-import checkNode from "cli-check-node";
+import init from "./utils/init.js";
 
 const log = console.log;
 const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
@@ -19,40 +17,32 @@ const warning = chalk.hex('#FFA500');
 const info = chalk.blue;
 const error = chalk.red.bold;
 
-checkNode("16");
 
-welcome(
-  {
-    title: `Bharathkumar`,
-    tagLine: `Hi, nice to meet you all`,
-    version: pkgJSON.version,
-    description: pkgJSON.description,
-    bgColor: `#6937FF`,
-    color: `#000000`,
-    bold: true,
-    clear: true,
-  }
-);
-log(`
-${italic(
-  `Software Engineer - who just don't want to code but do the engineering.`
-)}
+(() => {
+  init();
 
-🐦 ${twitterClr(` Twitter `)} ${dim(`https://twitter.com/iam_pbk`)}
-📚 ${purple(` Github `)}  ${dim(`https://github.com/Bharath-code`)}
+  log(`
+    ${italic(
+    `Software Engineer - who just don't want to code but do the engineering.`
+  )}
 
-`);
+    🐦 ${twitterClr(` Twitter `)} ${dim(`https://twitter.com/iam_pbk`)}
+    📚 ${purple(` Github `)}  ${dim(`https://github.com/Bharath-code`)}
 
-log(`
+    `);
 
-  ${sym.success} ${success(` SUCCESS `)} Thank you for using my CLI
+  log(`
 
-  ${sym.info} ${info(` INFO `)} Learning CLI automation
+      ${sym.success} ${success(` SUCCESS `)} Thank you for using my CLI
 
-  ${sym.warning} ${warning(` WARNING `)} Don't copy me, Be yourself
+      ${sym.info} ${info(` INFO `)} Learning CLI automation
 
-  ${sym.error} ${error(` ERROR `)} I'm learning, so bear my mistakes
+      ${sym.warning} ${warning(` WARNING `)} Don't copy me, Be yourself
 
-  `)
+      ${sym.error} ${error(` ERROR `)} I'm learning, so bear my mistakes
 
-alert({ type: 'info', msg: 'Checkout that i have created a node module' })
+      `)
+
+  alert({ type: 'info', msg: 'Checkout that i have created a node module' })
+
+})();
