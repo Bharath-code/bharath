@@ -4,10 +4,11 @@ import welcome from "cli-welcome";
 
 import pkgJSON from "./../package.json" assert { type: "json" };
 
-export default () => {
+export default (minimal, clear) => {
   unhandled();
+  minimal && console.log(`Bharath kumar`)
 
-  welcome(
+  !minimal && welcome(
     {
       title: `Bharathkumar`,
       tagLine: `Hi, nice to meet you all`,
@@ -16,7 +17,7 @@ export default () => {
       bgColor: `#6937FF`,
       color: `#000000`,
       bold: true,
-      clear: true,
+      clear
     }
   );
 
