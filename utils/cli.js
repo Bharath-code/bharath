@@ -21,6 +21,7 @@ const helpText =
        ${yellow(`--no-clear `)}      Doesn't clear the console
        ${yellow(`-d`)},${yellow(`--debug`)}       Print the debugging info
        ${yellow(`-v`)},${yellow(`--version`)}     Print CLI version number
+       ${yellow(`-p`)},${yellow(`--post`)}     Print top 10 blog posts
 
     Command
 
