@@ -5,7 +5,7 @@ const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
 const purple = chalk.hex(`#6cc644`).bold.inverse;
 const italic = chalk.italic;
 const dim = chalk.dim;
-const args = process.argv.slice(2);
+//const args = process.argv.slice(2);
 
 //alerts
 import sym from "log-symbols";
@@ -42,5 +42,7 @@ const mis =
 
       `;
 const ad = `Checkout my node module pages`;
+const blogName = `AhmadAwais.com`;
+const blog = `Latest posts`;
 
-export { social, bio, mis, ad }
+export { social, bio, mis, ad, blog, blogName }

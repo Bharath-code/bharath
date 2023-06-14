@@ -37,38 +37,43 @@ const options = {
   importMeta: import.meta,
   flags: {
     bio: {
-      type: 'boolean',
-      default: true
+      type: "boolean",
+      default: true,
     },
     clear: {
-      type: 'boolean',
-      default: true
+      type: "boolean",
+      default: true,
+    },
+    post: {
+      type: "boolean",
+      default: false,
+      shortFlag: "p"
     },
     minimal: {
-      type: 'boolean',
-      shortFlag: 'm'
+      type: "boolean",
+      shortFlag: "m",
     },
     social: {
-      type: 'boolean',
-      default: true
+      type: "boolean",
+      default: true,
     },
     mis: {
-      type: 'boolean',
-      default: true
+      type: "boolean",
+      default: true,
     },
     ad: {
-      type: 'boolean',
-      default: true
+      type: "boolean",
+      default: true,
     },
     debug: {
-      type: 'boolean',
-      shortFlag: 'd'
+      type: "boolean",
+      shortFlag: "d",
     },
     version: {
-      type: 'boolean',
-      shortFlag: 'v'
-    }
-  }
-}
+      type: "boolean",
+      shortFlag: "v",
+    },
+  },
+};
 
 export default meow(helpText, options);
